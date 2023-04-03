@@ -2,6 +2,7 @@ menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 15rem 0.5rem 15rem;
 
 }
 .logo{
@@ -31,5 +32,6 @@ a{
 .hover-effect:hover {
   background-color: #f4ce14;
   transition: 0.25s;
+  border-radius: 0.5rem;
 }
 

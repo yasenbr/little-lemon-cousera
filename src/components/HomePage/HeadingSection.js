@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function HeadingSection() {
   return (
     <header>
-      <article className="call-to-action">
-        <section className="hero-text">
+      <article className="heading-Container">
+        <section className="heading-text">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
           <p className="subsection">
@@ -19,9 +19,9 @@ function HeadingSection() {
           </Link>
         </section>
 
-        <section className="hero-image">
+        <section className="heading-image">
           <img
-            src={require("../../assets/food/food1.png")}
+            src={require("../../assets/food/Reservation-image.avif")}
             alt="Little Lemon restaurant cuisine"
           ></img>
         </section>
