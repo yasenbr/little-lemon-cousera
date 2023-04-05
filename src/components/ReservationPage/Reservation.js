@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useReducer } from "react";
 import "./Reservation.css";
+import ReservationForm from "./ReservationForm";
+import { fetchAPI } from "../../bookingAPI";
 
 function Reservation() {
+
+  function updateTimes(date) {
+    return fetchAPI(date);
+  }
+
+  const output = fetchAPI(new Date());
+
+  const [availableTimes, dispatch] = useReducer(updateTimes, output);
+
   return (
-    <div>
-      <h1>reservation</h1>
-    </div>
+    <header>
+      <article className="reservation-page-Container">
+        <section className="reservation-page-heading-text">
+          <ReservationForm
+            availableTimes={availableTimes}
+            updateTimes={dispatch}
+          />
+        </section>
+      </article>
+    </header>
   );
 }
 

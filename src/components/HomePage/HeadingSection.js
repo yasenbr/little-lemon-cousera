@@ -27,7 +27,7 @@ function HeadingSection() {
 
         <section className="heading-image ">
           <img
-            src={require("../../assets/food/Reservation-image.avif")}
+            src={require("../../assets/food/platte.png")}
             alt="Little Lemon restaurant cuisine"
             className="rotate"
           ></img>
