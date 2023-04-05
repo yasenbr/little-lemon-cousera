@@ -1,0 +1,79 @@
+/* ABOUT */
+.about-us-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem 2rem 5rem;
+  animation-duration: 0.33s;
+  animation-timing-function: ease-in-out;
+  animation-name: slideDownFade;
+  background-color: #f4ce14;
+}
+
+.about-heading {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin:5rem;
+}
+
+.about-heading > h1 {
+  color:#fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: -1.5rem;
+}
+
+.about-heading > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+}
+
+.about-heading > p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.about-subtext {
+  margin-top: -1.5rem;
+}
+
+.double-image {
+  width: 50%;
+  max-height: 18rem;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+}
+
+.double-image > img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  margin-left: 25%;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+}
+
+.about-img-1 {
+  width: 100%;
+  position: absolute;
+  top: 10rem;
+    left: -12rem;
+}
+
+.about-img-2 {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}

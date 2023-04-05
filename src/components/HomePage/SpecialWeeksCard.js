@@ -5,7 +5,7 @@ import "./SpecialWeeksCard.css";
 function SpecialWeeksCard(props) {
     const[image, name, price, description] = [props.image, props.name, props.price, props.description];
   return (
-    <article className="spacial-card">
+    <article className="special-card">
       <img src={image} alt="Special menu" />
       <section className="special-card-content">
         <h1>{name}</h1>

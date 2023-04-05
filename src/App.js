@@ -1,23 +1,15 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/HomePage/Home";
-import About from "./components/AboutPage/About";
-
+import Nav from "./components/Navigation/Nav";
+import Footer from "./components/Footer/Footer";
+import Routing from "./components/Routing";
 import "./App.css";
-import Menu from "./components/MenuPage/Menu";
-import Reservation from "./components/ReservationPage/Reservation";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about" exact element={<About />} />
-          <Route path="/menu" exact element={<Menu />} />
-          <Route path="/reservations" exact element={<Reservation />} />
-        </Routes>
-      </BrowserRouter>
+      <Nav />
+      <Routing/>
+      <Footer />
     </>
   );
 }

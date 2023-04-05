@@ -3,7 +3,7 @@
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 2rem;
   font-family: "Karla";
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .action-button:hover {
@@ -15,24 +15,36 @@
   transition: 0.2s;
 }
 
-.spacial-card{
-    width: 25rem;
-    height: 35rem;
-    background-color: #FFF;
+.special-card{
+    width: 20rem;
+    height: 30rem;
+    background-color: #edefee;
     border-radius: 1rem;
     margin: 1rem;
     font-family: "Karla";
-    font-size: 1.5rem;
-    
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
 }
+
+
 
 .special-card-content{
     margin: 0.5rem 2rem 1rem 2rem;
 }
 
-.spacial-card > img{
-    width: 25rem;
+.special-card-content > h1{
+  margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+.special-card-content > h3{
+    font-size: 1.2rem;
+}
+.special-card-content > p{
+  height: 5rem;
+    font-size: 1rem;
+}
+
+.special-card > img{
+    width: 20rem;
     height:15rem;
     object-fit: cover;
     border-top-left-radius: 1rem;
